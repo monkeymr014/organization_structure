@@ -1,9 +1,14 @@
+import React from 'react';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+
+
+  render() {
   return (
-    <p>A</p>
+    <p></p>
   );
+  }
 }
 
 export default App;
