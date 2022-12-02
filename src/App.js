@@ -1,31 +1,9 @@
 import React from 'react';
 import './App.css';
 import Unit from './component/Unit/Unit';
+import frse from './structure.js'
 
 
-const frse = [
-  {
-    id: 1,
-    name: 'boss',
-    position: '1',
-    children: [
-      2, 3,
-    ]
-  },
-  {
-    id: 2,
-    name: 'boss2',
-    position: '2',
-    children: [
-      3
-    ]
-  },
-  {
-    id: 3,
-    name: 'boss2',
-    position: '2',
-  }
-]
 
 
 class App extends React.Component {
@@ -46,3 +24,17 @@ class App extends React.Component {
 }
 
 export default App;
+
+/* 
+
+
+Podział na 
+  FRSE?
+  1.Boss - zarząd
+  2.Dyrektor - biuro
+  3.Koordynator - zespoł 
+  Czyli na komórki,
+     każda komórka ma przypisanych praconików.
+     każda komórka ma akcpetatora wyżej lub wyznaczonego dodatkowego akceptatora.
+
+*/

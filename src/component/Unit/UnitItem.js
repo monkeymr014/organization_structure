@@ -23,6 +23,7 @@ export default UnitItem;
       [dodanie strukóry]
          -  Dyrektor Głowny
          -  Dyrektor 
+         -  Zespół
          -  Koordynator
          -  Pracownik
 

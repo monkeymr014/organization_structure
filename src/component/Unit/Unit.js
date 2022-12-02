@@ -4,21 +4,17 @@ import UnitItem from "./UnitItem";
 
 const Unit = (props) => (
    <div className={styles.wrapper}>
-
       {
-         props.data.map((item, i) => (
+         props.data.map((item, i, arr) => (
             <>
+               {arr[i - 1]?.position != item.position
+                  ?
+                  <span className={styles.break} />
+                  : null}
                <UnitItem key={i} {...item} />
-               { item.id == '1' ?
-               <div className={styles.break} >
-               
-               </div>
-               : null}
             </>
          ))
       }
-
-
    </div>
 )
 
