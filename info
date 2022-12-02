@@ -1,0 +1,26 @@
+
+   
+   1. Wymyślenie struktóry danych. (każde dziecko musi wiedzieć jakiego ma rodzica). Główny rodzic FRSE
+   2. Dodanie stylu tak aby każde dziecko było niżej od rodzica (position).
+   3. W unicie zawarcie pracowników (odzielna tablica).       
+   
+   UnitItems - komórka (jak rozdzielić żeby każdy Unit wiedział kim jest)
+      [dodanie]
+         -  Dyrektor Głowny
+         -  Dyrektor 
+         -  Zespół
+         -  Koordynator
+         -  Pracownik
+
+   4. Dodanie modułu dodawania Unitów.
+
+
+Podział na 
+  FRSE?
+  1.Boss - zarząd
+  2.Dyrektor - biuro
+  3.Koordynator - zespoł 
+  Czyli na komórki,
+     każda komórka ma przypisanych praconików.
+     każda komórka ma akcpetatora wyżej lub wyznaczonego dodatkowego akceptatora.
+

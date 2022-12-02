@@ -1,23 +1,35 @@
 import React from 'react';
 import './App.css';
 import Unit from './component/Unit/Unit';
+import Button from './component/Button/Button';
+import Modal from './component/Modal/Modal';
 import frse from './structure.js'
-
 
 
 
 class App extends React.Component {
 
   state = {
-    units: [...frse]
+    units: [...frse],
+    isOpenModal: false
   }
-
+  openModal = () => {
+    this.setState({
+      isOpenModal: true
+    })
+  }
   render() {
     console.log(this.state)
     return (
       <>
+
         <h1>Struktura</h1>
+        <Button  openModalFn={this.openModal} />
         <Unit data={this.state.units} />
+        {
+          this.state.isOpenModal && <Modal />
+        }
+        
       </>
     );
   }
@@ -25,16 +37,3 @@ class App extends React.Component {
 
 export default App;
 
-/* 
-
-
-Podział na 
-  FRSE?
-  1.Boss - zarząd
-  2.Dyrektor - biuro
-  3.Koordynator - zespoł 
-  Czyli na komórki,
-     każda komórka ma przypisanych praconików.
-     każda komórka ma akcpetatora wyżej lub wyznaczonego dodatkowego akceptatora.
-
-*/
